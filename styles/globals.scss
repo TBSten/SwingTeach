@@ -1,0 +1,63 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+//   color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover{
+      color: red;
+      transition: 0.3s;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+$main-c: rgb(165, 165, 233); 
+$sub-c: rgb(243, 243, 243); 
+
+h1{
+    background: $main-c;
+    color:white;
+    padding-top: 30%;
+    padding-bottom: 1rem;
+    padding: 10% 1rem 0.5rem 0.5rem;
+}
+h2{
+    position: relative;
+    &:after{
+        content:" ";
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        border-bottom: solid 3px blue;
+        left: 0;
+        top: 0;
+    }
+}
+ul,ol{
+    background: $sub-c;
+    border: solid 3px gray;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+b{
+    font-size: 1.1em;
+}
+.todo{
+    margin: 20% 0 ;
+}
+
+
+
