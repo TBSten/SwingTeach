@@ -75,18 +75,20 @@ const todos = [
 
 export default function Miyatomo() {
     return (
-      <div >
+      <div>
         <h1>みやともへ</h1>
-        <h2>完成までにやるべきこと</h2>
-        <ol>
-            {
-                todos.map(el=>(
-                    <li key={el.title}>
-                        <a href={"#"+el.title}>{el.title}</a>
-                    </li>
-                ))
-            }
-        </ol>
+        <div className="todo">
+            <h2>完成までにやるべきこと</h2>
+            <ol>
+                {
+                    todos.map(el=>(
+                        <li key={el.title}>
+                            <a href={"#"+el.title}>{el.title}</a>
+                        </li>
+                    ))
+                }
+            </ol>
+        </div>
         {
             todos.map(el=>(
                 <div key={el.title} id={el.title} className="todo">
