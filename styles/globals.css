@@ -1,5 +1,6 @@
 html,
-body {
+body,
+#__next {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -58,5 +59,27 @@ b {
 .todo {
   margin: 70px 0;
   padding: 0 1rem;
+}
+
+div.code {
+  font-size: 16px;
+  margin: 1rem 0;
+}
+div.code h6 {
+  margin: 0;
+  display: inline-block;
+  width: auto;
+  padding: 0.25rem 0.5rem;
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+div.code pre {
+  margin: 0;
+  line-height: 2em;
+  font-weight: bold;
 }
 /*# sourceMappingURL=globals.css.map */
