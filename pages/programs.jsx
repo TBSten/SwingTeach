@@ -88,11 +88,21 @@ export default function Templates(){
     return (
         <div>
             <h1>プログラム集</h1>
-            <div className="todo">
-
+            <ul>
                 {
                     dataset.map(el=>(
-                        <div className="code" key={el.title}>
+                        <li key={el.title}>
+                            <a href={"#"+el.title}>
+                                {el.title}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+            <div className="todo">
+                {
+                    dataset.map(el=>(
+                        <div className="code" key={el.title} id={el.title}>
                             <h2>{el.title}</h2>
                             {el.details}
                         </div>

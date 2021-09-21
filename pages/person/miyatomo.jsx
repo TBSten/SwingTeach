@@ -1,3 +1,4 @@
+import Link from "next/link" ;
 
 function todo (title,desc){
     return {
@@ -73,10 +74,22 @@ const todos = [
         </>),
 ] ;
 
+function ProgramList(){
+    return (
+        <Link href="/programs">
+            <a>
+            {">>>"}プログラムの一覧
+            </a>
+        </Link>
+    ) ;
+}
+
 export default function Miyatomo() {
     return (
       <div>
         <h1>みやともへ</h1>
+        <ProgramList />
+
         <div className="todo">
             <h2>完成までにやるべきこと</h2>
             <ol>
@@ -97,6 +110,8 @@ export default function Miyatomo() {
                 </div>
             ))
         }
+        
+        <ProgramList />
       </div>
     )
   }
